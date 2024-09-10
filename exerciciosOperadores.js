@@ -153,7 +153,7 @@ let resultado1_10 = typeof a10 == typeof d10;
 let resultado2_10 = a10 + b10 == d10;
 let resultado3_10 = c10 == Number(d10);
 
-console.log(resultado1_10, resultado2_10, resultado3_10); // false, true, 
+console.log(resultado1_10, resultado2_10, resultado3_10); // true, false, true 
 
 
 /*
@@ -186,7 +186,13 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // que armazene a soma de a11 e b11, multiplicada por c11.
 // Exiba o valor de resultado11 no console.
 
+let a11 = 4 
+let b11 = 6
+let c11 = 8
 
+let resultado11 = (a11 + b11) * c11
+
+console.log(resultado11)
 
 
 //12.
@@ -194,7 +200,16 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // Escreva expressões que comparem se x12 é maior que y12, se y12 é menor ou igual a x12,
 // e se x12 e y12 são iguais. Exiba os resultados dessas comparações no console.
 
+let x12 = 22
+let y12 = 14
 
+let resultado12 = (x12 > y12)
+let resultado12a = (y12 <= x12)
+let resultado12b = (x12 == y12)
+
+console.log("x12 eh maior que y12:", resultado12)
+console.log("y12 eh menor ou igual a x12:", resultado12a)
+console.log("x12 eh igual a y12:", resultado12b)
 
 
 //13.
@@ -202,38 +217,53 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // Em seguida, subtraia a idade do ano atual e converta o resultado para string.
 // Exiba o resultado no console.
 
+let idade = 18
+let anoAtual = 2024
+ 
+let resultado13 = (anoAtual - idade).toString()
 
-
+console.log(resultado13)
 
 //14.
 // Declare duas variáveis, s14 e t14. Atribua um valor numérico a s14 e uma string numérica a t14.
 // Converta t14 para número usando Number() e adicione-a a s14.
 // Exiba o resultado da adição e o tipo da variável resultante no console usando typeof.
 
+let s14 = 12
+let t14 = "32"
+let outraVariavel = Number(t14) + s14
 
-
+console.log(outraVariavel, typeof outraVariavel)
 
 //15.
 // Crie duas variáveis, u15 e v15, uma com um número e a outra com uma string que representa o mesmo número.
 // Compare os tipos dessas variáveis usando typeof e exiba o resultado no console.
 // Depois, verifique se as variáveis têm o mesmo valor usando == e ===.
 
+let u15 = 5 
+let v15 = "5"
 
-
+console.log(typeof u15, typeof v15)
+console.log(u15 == v15, u15 === v15)
 
 //16.
 // Crie uma constante que armazena o preço de um produto.
 // Crie uma variável que armazena a quantidade comprada desse produto.
 // Multiplique os valores e exiba o resultado no console, convertendo-o para string.
 
+let preço = 12
+let quantidadeComprada = 6
+let resultado15 =  (preço * quantidadeComprada).toString()
 
-
+console.log(resultado15)
 
 //17.
 // Crie duas variáveis, z17 e a17, uma com uma string e outra com um número.
 // Concatene as duas variáveis e exiba o resultado e o tipo da variável resultante no console.
 
-
+let z17 = "14"
+let a17 = 16
+console.log(typeof (a17 + z17), a17 + z17)
 
 
 //18.
@@ -242,29 +272,45 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // Converta as variáveis para o tipo correto e calcule a média desses valores.
 // Exiba a média no console.
 
+let b18 = 4
+let c18 = "16"
+let d18 = 10
+let resultado18 = Number(c18)
+let resultado18a =  b18 + c18 + d18
 
-
+console.log(resultado18a)
 
 //19.
 // Declare uma variável com um valor numérico e converta-a para uma string usando toString().
 // Depois, converta a string de volta para número usando Number() e exiba o tipo da variável em cada etapa no console.
 
+let a19 = 18
+let conversao19 = a19.toString()
+let conversaoNumber = Number(conversao19)
 
-
+console.log(typeof a19, typeof conversao19, typeof conversaoNumber)
 
 //20.
 // Crie uma variável para armazenar a quantidade de horas trabalhadas e outra para armazenar o valor pago por hora.
 // Calcule o total a receber e verifique se o valor é maior que 500.
 // Exiba a resposta no console.
 
+let horasTrabalhadas = 90 
+let valorPagoPorHora = 160
 
+let totalAReceber = horasTrabalhadas * valorPagoPorHora
+let totalAReceber2 = (horasTrabalhadas * valorPagoPorHora) > 500
+console.log(totalAReceber, totalAReceber2)
 
 
 //21.
 // Declare uma constante com um valor booleano qualquer.
 // Em seguida, converta esse valor para número e exiba o valor convertido no console.
 
+let booleano = true
+let booleanoConvertido = Number(booleano)
 
+console.log(booleanoConvertido)
 
 
 //22.
@@ -272,7 +318,8 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // Em seguida, crie uma variável que armazene a quantidade de caracteres desse nome.
 // Exiba a quantidade de caracteres no console.
 
-
+let nome = "Pedro Henrique Vargas de Souza"
+console.log(nome.length)
 
 
 //23.
@@ -280,4 +327,9 @@ console.log(resultado1_10, resultado2_10, resultado3_10); // false, true,
 // Subtraia um número do outro e verifique se o resultado é negativo.
 // Exiba a resposta no console.
 
+let vava = 124
+let vava2 = 324
 
+let vava3 = vava - vava2
+
+console.log(vava3)
