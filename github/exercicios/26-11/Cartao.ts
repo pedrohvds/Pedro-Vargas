@@ -1,0 +1,1 @@
+import { MetodosDePagamento } from "./MetodosDePagamento";
